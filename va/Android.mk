@@ -55,6 +55,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libva
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_PROPRIETARY_MODULE := true
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_SHARED_LIBRARIES := libdl libdrm libcutils liblog
 
@@ -91,6 +92,7 @@ LOCAL_C_INCLUDES += \
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libva-android
 LOCAL_PROPRIETARY_MODULE := true
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_SHARED_LIBRARIES := libva libdrm
 
